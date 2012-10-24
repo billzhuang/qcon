@@ -29,6 +29,10 @@ module AnyBase
   end
 end
 
+get "/" do
+  'hello, bot'
+end
+
 get "/hehe/:name" do
    # AnyBase.encode(88878798, base36)
     AnyBase.encode(params[:name], base36)
